@@ -1,0 +1,59 @@
+local op = "warden"
+ClearLog()
+
+OutputLogMessage("Welcome to Pathy Wathy Ware!                                        ")
+
+OutputLogMessage("we think your op is chosen as ")
+
+EnablePrimaryMouseButtonEvents(true)
+OutputLogMessage("op thinking = " .. op .. "! 1x \n")
+
+function OnEvent(event, arg)
+    if event == "MOUSE_BUTTON_PRESSED" and arg == 1 then
+    ClearLog()
+    OutputLogMessage(" checking operator 2x ")
+        mozzi()
+        warden()
+        
+    end
+end
+
+function mozzi()
+  ClearLog()
+    if op == "mozzi" then
+      OutputLogMessage("op chosen = " .. op .. "!\n")
+          if IsKeyLockOn("Capslock") then
+              repeat
+                OutputLogMessage(" MACROING! ")
+                  MoveMouseRelative(0, 7)
+                  Sleep(9)
+              until not IsMouseButtonPressed(1) or not IsMouseButtonPressed(3)
+          end
+      end
+  end
+  
+ function warden()
+     if op == "warden" then
+      OutputLogMessage("op chosen = " .. op .. "!\n")
+          if IsKeyLockOn("Capslock") then
+              repeat
+                OutputLogMessage(" MACROING! ")
+                  MoveMouseRelative(0, 12)
+                  Sleep(9)
+              until not IsMouseButtonPressed(1) or not IsMouseButtonPressed(3)
+          end
+      end
+  end
+  
+ function warden()
+     if op == "warden" then
+      OutputLogMessage("op chosen = " .. op .. "!\n")
+          if IsKeyLockOn("Capslock") then
+              repeat
+                OutputLogMessage(" MACROING! ")
+                  MoveMouseRelative(0, 12)
+                  Sleep(9)
+              until not IsMouseButtonPressed(1) or not IsMouseButtonPressed(3)
+          end
+      end
+  end
